@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title></title>
+
+		<style>
+			.btn {
+				color: red;
+			    font-size: 20px;
+			    background-color: orange;
+			    display: inline-block;
+			    padding: 10px;
+			    border-radius: 10px;
+			    border: solid 1px green;
+			}
+			.btn:hover {
+				background-color: pink;
+				cursor: pointer;
+			}
+
+			.alert {
+				display: none;
+				font-size:  48px;
+				font-weight: bold;
+				color: red;
+			}
+
+		</style>
+	</head>
+	
+	<body>	
+
+		<div class="btn hello" data-message="Hello!!">
+			say hello world
+		</div>
+
+		<div class="btn goodbye" data-message="Goodbye!!">
+			say goodbye
+		</div>
+
+		<div class="alert hello-goodbye-message"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			function displayMessage(message) {
+				var $el = $(".hello-goodbye-message");
+				$el.text(message)
+					.fadeIn(500, 
+						function() {
+							$el.fadeOut(500);
+						});
+			}
+
+			$(function() {
+				$(".hello, .goodbye").click(function() {
+					displayMessage($(this).data().message);
+				});
+			});
+		</script>
+	</body>
+</html>
