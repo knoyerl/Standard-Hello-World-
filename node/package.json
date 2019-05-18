@@ -1,0 +1,14 @@
+{
+  "name": "node-playground",
+  "version": "1.0.0",
+  "description": "Node JS playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Brad/Lee",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
