@@ -1,0 +1,34 @@
+/*Global*/
+
+body{
+	font-family: Arial, Helvetica;
+	font-size: 15px;
+	margin:0;
+	background-color: #898888;
+}
+
+/*Header*/
+
+header .Sandor{
+	background-color: #000000;
+	color:#feda27;
+	padding-top:20px;
+	min-height:70px;
+	padding-bottom: 20px;
+	border-style: ridge;
+	border-color:#feda27;
+
+}
+
+.sandorthoughts,
+.Sandor{
+	text-align: center;
+}
+
+/*Section*/
+
+.photo,
+.audio,
+.sandormemories{
+	text-align:center;
+}

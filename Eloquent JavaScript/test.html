@@ -22,23 +22,6 @@
 				font-size:  48px;
 				font-weight: bold;
 				color: red;
-				border: solid 2px grey;
-				padding: 25px;
-				background-color: blue;
-				position:absolute;
-				z-index: 1000;
-				top: 0;
-				left: 0;
-			}
-
-			.alert>.close {
-				background-color: white;
-				position: absolute;
-				top: 0;
-				right: 0;
-				font-size: 16px;
-				cursor: pointer;
-
 			}
 
 		</style>
@@ -54,23 +37,16 @@
 			say goodbye
 		</div>
 
-		<div class="alert">
-			<div class="close">
-				x
-			</div>
-			<div class="message">
-				
-			</div>
-		</div>
+		<div class="alert hello-goodbye-message"></div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
 			function displayMessage(message) {
-				var $alert = $(".alert");
-				$(".message", $alert).text(message);
-				$alert.fadeIn(500, 
+				var $el = $(".hello-goodbye-message");
+				$el.text(message)
+					.fadeIn(500, 
 						function() {
-						
+							$el.fadeOut(500);
 						});
 			}
 
@@ -78,11 +54,6 @@
 				$(".hello, .goodbye").click(function() {
 					displayMessage($(this).data().message);
 				});
-				$(".alert>.close").click(function(){
-					$(".alert").fadeOut(500);
-				}); 
-
-				
 			});
 		</script>
 	</body>
