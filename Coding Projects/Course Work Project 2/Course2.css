@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	text-align: left;
+	margin-bottom: 20px; 
+	background: 0;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+
+.dayOfTheWeek {
+	text-align: left;
+	padding-right: 1400px;
+}
+
+.button1, .button2, .button3, .button4, .button5, .button6, .button7 {
+	margin: 20px;
+	border-style: solid;
+	background-color: #CDCCCC;
+	border-radius: 5px;
+	text-align: center;
+}
+
+
+
+

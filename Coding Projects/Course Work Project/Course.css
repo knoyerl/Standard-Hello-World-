@@ -1,0 +1,26 @@
+.scheduleTitles {
+	font-family: arial;
+}
+
+.headingOne, .headingTwo, .headingThree {
+	display: inline-block;
+	margin-right: 300px;
+}
+
+.scheduleCourseNames {
+	display: inline-block;
+	margin-right: 310px;
+	font-weight: bold;
+}
+
+.scheduleCourseLevel {
+	display: inline-block;
+	margin-right: 460px;
+	font-weight: bold;
+}
+
+.scheduleCourseTime {
+	display: inline-block;
+	font-weight: bold;
+}
+
